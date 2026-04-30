@@ -393,7 +393,7 @@ class Adivinar {
 
     for (int i = 0; i < indicesMezclados.length; i++) {
       int indice = indicesMezclados[i];
-      // ... tu lógica de filtrado ...
+
       String pregunta = preguntas[indice];
       bool respuesta = leerSiNo(pregunta);
       List<Map<String, dynamic>> filtrados = [];

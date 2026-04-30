@@ -396,7 +396,12 @@ class Adivinar {
 
       String pregunta = preguntas[indice];
       bool respuesta = leerSiNo(pregunta);
+      candidatos = candidatos
+          .where((personaje) => aplicarFiltro(indice, personaje) == respuesta)
+          .toList();
+
       List<Map<String, dynamic>> filtrados = [];
+
       for (var personaje in candidatos) {
         if (aplicarFiltro(indice, personaje) == respuesta) {
           filtrados.add(personaje);
@@ -426,6 +431,9 @@ class Adivinar {
         }
       }
     }
+
+    stdout.writeln(
+        'Quedan: ${candidatos.map((personajes) => personajes['name']).join(', ')}');
 
     Map<String, dynamic> acertar = candidatos.first;
     stdout.writeln('¡Creo que es: ${acertar['name']}!');

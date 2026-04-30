@@ -1,0 +1,25 @@
+z //https://anapioficeandfire.com/import 'package:http/http.dart' as http;
+candidatos = filtrados;
+      stdout.writeln(
+          'Quedan: ${candidatos.map((personajes) => personajes['name']).join(', ')}');
+
+Jon Snow
+Daenerys Targaryen
+Tyrion Lannister
+Arya Stark
+Cersei Lannister
+Jaime Lannister
+Eddard Stark
+Sansa Stark
+Robb Stark
+Stannis Baratheon
+Tywin Lannister
+Petyr Baelish
+Varys
+Brienne of Tarth
+Theon Greyjoy
+Sandor Clegane
+Jorah Mormont
+Samwell Tarly
+Davos Seaworth
+Oberyn Martell

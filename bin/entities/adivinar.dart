@@ -185,39 +185,72 @@ class Adivinar {
     bool apareceEnTv = (personaje['tvSeries'] as List? ?? []).isNotEmpty;
     bool estaVivo = (personaje['died'] as String? ?? '').isEmpty;
     List<String> pareja = [
-      'samwell', 'sam tarly', 'oberyn', 'oberyn nymeros',
-      'jon snow', 'tormund', 'mance', 'daario',
-
-      // Stark
-      'ned stark', 'eddard stark', 'robb stark', 'rickard stark',
-      'benjen stark', 'lyanna stark',
-
-      // Lannister
-      'tyrion', 'jaime', 'cersei', 'tywin', 'kevan',
-      'lancel', 'stafford',
-
-      // Targaryen
-      'daenerys', 'rhaegar', 'viserys', 'aegon',
-      'daemon targaryen', 'jaehaerys',
-
-      // Baratheon
-      'robert', 'stannis', 'renly', 'steffon',
-
-      // Greyjoy
-      'balon', 'euron', 'theon', 'victarion', 'quellon',
-
-      // Tyrell
-      'mace', 'loras', 'margaery', 'garlan', 'willas',
-
-      // Martell
-      'doran', 'elia', 'quentyn', 'maron martell',
-
-      // Otros importantes
-      'drogo', 'jorah', 'davos', 'roose', 'ramsay',
-      'petyr', 'littlefinger', 'varys', 'bronn',
-      'barristan', 'beric', 'howland', 'hoster',
-      'edmure', 'lysa', 'jon arryn', 'walder frey',
-      'illyrio', 'hizdahr', 'mero', 'syrio',
+      'samwell',
+      'sam tarly',
+      'oberyn',
+      'oberyn nymeros',
+      'jon snow',
+      'tormund',
+      'mance',
+      'daario',
+      'ned stark',
+      'eddard stark',
+      'robb stark',
+      'rickard stark',
+      'benjen stark',
+      'lyanna stark',
+      'tyrion',
+      'jaime',
+      'cersei',
+      'tywin',
+      'kevan',
+      'lancel',
+      'stafford',
+      'daenerys',
+      'rhaegar',
+      'viserys',
+      'aegon',
+      'daemon targaryen',
+      'jaehaerys',
+      'robert',
+      'stannis',
+      'renly',
+      'steffon',
+      'balon',
+      'euron',
+      'theon',
+      'victarion',
+      'quellon',
+      'mace',
+      'loras',
+      'margaery',
+      'garlan',
+      'willas',
+      'doran',
+      'elia',
+      'quentyn',
+      'maron martell',
+      'drogo',
+      'jorah',
+      'davos',
+      'roose',
+      'ramsay',
+      'petyr',
+      'littlefinger',
+      'varys',
+      'bronn',
+      'barristan',
+      'beric',
+      'howland',
+      'hoster',
+      'edmure',
+      'lysa',
+      'jon arryn',
+      'walder frey',
+      'illyrio',
+      'hizdahr',
+      'mero',
+      'syrio',
     ];
     bool variasTemporadas = (personaje['tvSeries'] as List? ?? []).length > 1;
 
@@ -343,31 +376,30 @@ class Adivinar {
   }
 
   static List<String> preguntas = [
-    '¿Es mujer?', // 0
-    '¿Es adulto?', // 1
-    '¿Sigue con vida?', // 2
-    '¿Es buena persona?', // 3
-    '¿Es tiene alto rango?', // 4
-    '¿Tiene apellido de gran casa?', // 5
-    '¿Tiene pareja?', // 6
-    '¿Aparece en más de 1 tempoarda?', // 7
-    '¿Tiene dragones?', // 8
-    '¿Es bastardo?', // 9
-    '¿Aparece en la serie de televisión?', // 10
-    '¿Tiene un arma?', // 11
-
-    '¿Es protagonista ?', // 13
-    '¿Es conocido por su fuerza física?', // 14
-    '¿Es conocido por su inteligencia?', // 15
-    '¿Viene de más allá del Muro?', // 16
-    '¿Ha sido traicionado?', // 17
-    '¿Ha querido el Trono de Hierro?', // 18
-    '¿Tiene poderes mágicos?', // 19
+    '¿Es mujer?',
+    '¿Es adulto?',
+    '¿Sigue con vida?',
+    '¿Es buena persona?',
+    '¿Es tiene alto rango?',
+    '¿Tiene apellido de gran casa?',
+    '¿Tiene pareja?',
+    '¿Aparece en más de 1 tempoarda?',
+    '¿Tiene dragones?',
+    '¿Es bastardo?',
+    '¿Aparece en la serie de televisión?',
+    '¿Tiene un arma?',
+    '¿Es protagonista?',
+    '¿Es conocido por su fuerza física?',
+    '¿Es conocido por su inteligencia?',
+    '¿Viene de más allá del Muro?',
+    '¿Ha sido traicionado?',
+    '¿Ha querido el Trono de Hierro?',
+    '¿Tiene poderes mágicos?',
     '¿Puede resucitar a los muertos?',
-    '¿Es de la Casa Stark?', // 33
-    '¿Es de la Casa Lannister?', // 34
-    '¿Es de la Casa Targaryen?', // 35
-    '¿Es de la Casa Baratheon?', // 36
+    '¿Es de la Casa Stark?',
+    '¿Es de la Casa Lannister?',
+    '¿Es de la Casa Targaryen?',
+    '¿Es de la Casa Baratheon?',
   ];
 
   bool leerSiNo(String respuesta) {

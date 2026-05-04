@@ -117,7 +117,7 @@ abstract class Navegacion {
   }
 
   static Future<String> buscar() async {
-    print("Escribe el nombre o id del  personaje que quieres buscar:");
+    print("Escribe el nombre  del  personaje que quieres buscar:");
     String respuesta = stdin.readLineSync() ?? "error";
     Personajes? personaje =
         await Personajes.obtenerjuegodetronos(identificador: respuesta);
@@ -134,8 +134,8 @@ abstract class Navegacion {
     Cultura:      ${personaje.cultura}
     Título:       ${personaje.titulos}
     Apodo:        ${personaje.apodos}
-Nacionalidad: ${personaje.nacionalidad}
-Vivo:         ${personaje.vivo == true ? "Sí" : "No"}
+    Nacionalidad: ${personaje.nacionalidad}
+    Vivo:         ${personaje.vivo == true ? "Sí" : "No"}
 }   """);
     stdout.writeln('Pulsa Enter para volver...');
     stdin.readLineSync();

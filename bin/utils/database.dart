@@ -1,7 +1,7 @@
 import 'package:mysql1/mysql1.dart';
 
 abstract class DataBase {
-  static final String _host = "localhost"; // 127.0.0.1
+  static final String _host = "localhost";
   static final int _port = 3306;
   static final String _user = "root";
   static final String _dbName = "juegodetronos";

@@ -10,9 +10,8 @@ abstract class Sesion {
     var respuesta = await conn.query('SELECT * FROM users WHERE nick = ?', [
       nick,
     ]);
-    bool noExiste = respuesta.isEmpty; //es una varable
+    bool noExiste = respuesta.isEmpty;
     if (noExiste || respuesta.first[3] != password) {
-      // Si no exsite o la contraseñ no bcoincide false
       await conn.close();
       return false;
     }
